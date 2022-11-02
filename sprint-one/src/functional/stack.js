@@ -1,4 +1,5 @@
 var Stack = function() {
+
   var someInstance = {};
 
   var storage = {};
