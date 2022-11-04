@@ -1,9 +1,7 @@
 var Queue = function() {
 
   var someInstance = {};
-
   var storage = {};
-
   var increment = 0;
 
   someInstance.enqueue = function(value) {

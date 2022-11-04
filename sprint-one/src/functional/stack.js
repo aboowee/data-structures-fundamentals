@@ -1,9 +1,7 @@
 var Stack = function() {
 
   var someInstance = {};
-
   var storage = {};
-
   var increment = 0;
 
   someInstance.push = function(value) {
