@@ -1,5 +1,4 @@
 var Queue = function() {
-
   var someInstance = {};
 
   someInstance.storage = {};
