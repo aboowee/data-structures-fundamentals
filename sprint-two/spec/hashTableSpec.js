@@ -47,6 +47,15 @@ describe('hashTable', function() {
     window.getIndexBelowMaxForKey = oldHashFunction;
   });
 
+  it('should overwrite values that have the same key, then return undefined if value is removed', function() {
+    hashTable.insert('foo', 'bar');
+    hashTable.insert('foo', 'baz');
+    expect(hashTable.retrieve('foo')).to.equal('baz');
+    hashTable.remove('foo');
+    expect(hashTable.retrieve('foo')).to.equal(undefined);
+  });
+
+
   // (Advanced! Remove the extra "x" when you want the following tests to run)
   xit ('should double in size when needed', function() {
     _.each(people, function(person) {
