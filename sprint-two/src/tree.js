@@ -32,9 +32,3 @@ treeMethods.contains = function(target) {
   };
   return innerFunction(target, this);
 };
-
-
-
-/*
- * Complexity: What is the time complexity of the above functions?
- */

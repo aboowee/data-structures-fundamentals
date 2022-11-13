@@ -53,9 +53,4 @@ var Node = function(value) {
   node.next = null;
 
   return node;
-  //{value : #, next : null}
 };
-
-/*
- * Complexity: What is the time complexity of the above functions?
- */
