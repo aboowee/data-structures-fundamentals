@@ -41,4 +41,18 @@ describe('tree', function() {
     expect(tree.contains(8)).to.equal(true);
   });
 
+  it('should be able to add as many children', function() {
+    var i = 0;
+    while (i < 8) {
+      tree.addChild(i);
+      i++;
+    }
+    var j = 0;
+    while (j < 8) {
+      expect(tree.contains(j)).to.equal(true);
+      j++;
+    }
+
+  });
+
 });

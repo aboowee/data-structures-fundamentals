@@ -68,4 +68,12 @@ describe('graph', function() {
     expect(graph.hasEdge(3, 5)).to.equal(true);
     expect(graph.hasEdge(5, 5)).to.equal(true);
   });
+
+  it('should not contain edges if edges were not defined', function() {
+    graph.addNode(4);
+    graph.addNode(5);
+    graph.addEdge(5, 4);
+    graph.addNode(3);
+    expect(graph.hasEdge(3)).to.equal(false);
+  });
 });
